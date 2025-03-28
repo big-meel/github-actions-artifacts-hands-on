@@ -22,6 +22,8 @@ jobs:
   download:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code 
+        uses: actions/checkout@v4
       - name: Download text file
         uses: actions/download-artifact@v4.2.1
         with:
